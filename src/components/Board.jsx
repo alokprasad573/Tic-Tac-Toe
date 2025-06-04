@@ -57,7 +57,7 @@ export default function Board() {
                     <div className="text-3xl text-center mb-3">
                             {isXTurn ? <Turn1 /> : <Turn2 />}
                     </div> 
-                    <div className="flex flex-row items-center justify-evenly">
+                    <div className="flex flex-row items-center flex-wrap justify-evenly">
                         <Instruction />
                         <div>
                             <div className="flex flex-row justify-center">
