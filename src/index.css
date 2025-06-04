@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+body {
+    background-color: black;
+    font-family: "Merienda", cursive
+}
+
+.heading {
+    font-family: "Caramel", cursive;
+}
