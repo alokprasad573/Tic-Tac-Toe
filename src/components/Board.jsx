@@ -2,6 +2,8 @@ import React from "react";
 import Square from "./Square";
 import Winner1 from "./Winner1";
 import Winner2 from "./Winner2";
+import Turn1 from "./Turn1";
+import Turn2 from "./Turn2";
 import Instruction from './Instruction';
 
 export default function Board() {
@@ -52,6 +54,9 @@ export default function Board() {
                 </>
             ) : (
                 <>
+                    <div className="text-3xl text-center mb-3">
+                            {isXTurn ? <Turn1 /> : <Turn2 />}
+                    </div> 
                     <div className="flex flex-row items-center justify-evenly">
                         <Instruction />
                         <div>
@@ -70,7 +75,7 @@ export default function Board() {
                                 <Square onClick={() => handleClick(7)} value={state[7]} />
                                 <Square onClick={() => handleClick(8)} value={state[8]} />
                             </div>
-                        </div>
+                        </div>  
                     </div>
                 </>
             )}
